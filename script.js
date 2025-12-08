@@ -1,5 +1,5 @@
 // ===============================
-// script.js - ملف الجافاسكريبت المراجع
+// script.js - ملف الجافاسكريبت المراجع (معدّل)
 // ===============================
 
 // ===============================
@@ -198,10 +198,10 @@ function showHome() {
   const home = document.getElementById("home-screen");
   if (home) home.classList.remove("hidden");
 
-  // إظهار زر لوحة المشرف فقط للمشرفين
+  // إظهار زر لوحة المشرف فقط للمشرفين (استخدم id مباشر أكثر موثوقية)
   const code = localStorage.getItem("loggedInUser");
   const user = accounts[code];
-  const adminBtn = document.querySelector(".menu-btn[onclick*='admin-screen']");
+  const adminBtn = document.getElementById("admin-home-btn");
   if (adminBtn) {
     if (user && user.role === "admin") {
       adminBtn.classList.remove("hidden");
@@ -287,6 +287,15 @@ function showInitiatives() {
 }
 
 // ===============================
+// عرض شاشة المسابقات الداخلية
+// ===============================
+function showCompetitions() {
+  hideAll();
+  const el = document.getElementById("competitions-screen");
+  if (el) el.classList.remove("hidden");
+}
+
+// ===============================
 // العودة للشاشة الرئيسية
 // ===============================
 function backHome() {
@@ -308,7 +317,8 @@ function openPage(name) {
       window.location.href = "https://ellibrary.moe.gov.eg/books/";
       break;
     case "مسابقات":
-      window.location.href = "https://ellibrary.moe.gov.eg/books/";
+      // الآن تعرض شاشة المسابقات الداخلية بدل إعادة توجيه
+      showCompetitions();
       break;
     case "اعلانات":
       window.location.href = "https://whatsapp.com/channel/0029VbBX4wo1SWstPmiejS0F";
@@ -323,6 +333,21 @@ function openPage(name) {
 // ===============================
 function openTelegram() {
   window.open("https://t.me/nasr_military_students_bot", "_blank");
+}
+
+// ===============================
+// دوال إضافية للمبادرة (تمت الإضافة لكي لا ينتج خطأ عند الضغط على الأزرار)
+// ===============================
+function openArticle() {
+  hideAll();
+  const el = document.getElementById("initiative-article");
+  if (el) el.classList.remove("hidden");
+  else alert("المقال غير متوفر حالياً");
+}
+
+function openYouTube() {
+  // استبدل الرابط التالي برابط قناتكم على اليوتيوب عند توفره
+  window.open("https://www.youtube.com/@Beat7adna_nbny_w3yan", "_blank");
 }
 
 // ===============================
@@ -363,4 +388,4 @@ function escapeHtml(text) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#039;");
-      }
+    }
