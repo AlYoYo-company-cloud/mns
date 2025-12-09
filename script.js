@@ -381,6 +381,41 @@ function logout() {
   localStorage.removeItem("loggedInUser");
   location.reload();
 }
+function showCompetitionDetails(id) {
+  hideAll();
+  const detailsDiv = document.getElementById("competition-details-content");
+  if (!detailsDiv) return;
+
+  let html = "";
+
+  switch(id) {
+    case "ideal":
+      html = `<h3>مسابقة الطالب المثالي</h3>
+              <p>المستوى: مستوى المدرسة</p>
+              <p><strong>النتيجة:</strong> انتهت بفوز الطالب <strong>محمود أبو العزايم</strong></p>`;
+      break;
+    case "best-class":
+      html = `<h3>مسابقة أجمل فصل</h3>
+              <p>المستوى: مستوى المدرسة</p>
+              <p><strong>النتيجة:</strong> جاري التقييم</p>`;
+      break;
+    case "young-innovator":
+      html = `<h3>مسابقة المبتكر الصغير</h3>
+              <p>المستوى: مستوى المدرسة</p>
+              <p><strong>النتيجة:</strong> فاز بها الطالب <strong>يحيى محمد</strong></p>`;
+      break;
+    case "internet-research":
+      html = `<h3>مسابقة بحثية عن أخطار الانترنت</h3>
+              <p>الموضوع: "الانترنت سلاح ذو حدين: كيف تستفاد من مميزاته وتقاوم سلبياته"</p>
+              <p>التسجيل: الطلاب الراغبون بالتقديم، تسجيل أسمائهم عن طريق الطالب <strong>مصطفى أشرف</strong> (المقرر الديني والثقافي)، فصل 2/10</p>`;
+      break;
+    default:
+      html = `<p>تفاصيل غير متوفرة.</p>`;
+  }
+
+  detailsDiv.innerHTML = html;
+  document.getElementById("competition-details-screen").classList.remove("hidden");
+}
 
 // ===============================
 // دالة مساعدة: هروب عن النصوص لحماية الHTML
