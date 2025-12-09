@@ -228,64 +228,82 @@
     <h2 style="font-size:28px;">المناسبات والإنجازات</h2>
     <p style="text-align:center; margin-bottom:12px; font-size:16px;">ألبوم صور فعاليات المدرسة</p>
 
-    <!-- الأحداث -->
-    <div class="initiative-card" style="font-size:16px;">
-        <h3>🥇 تكريم الطلاب المتفوقين على منصة كوريو</h3>
-        <p><a href="https://www.facebook.com/groups/1557274441180613/permalink/4166045460303485/" target="_blank">📸 رابط الصور</a></p>
-    </div>
+    <!-- شاشة المناسبات والإنجازات -->
+<div id="events-screen" class="container hidden">
+    <h2 style="font-size:28px;">المناسبات والإنجازات</h2>
+    <p style="text-align:center; margin-bottom:12px; font-size:16px;">ألبوم صور فعاليات المدرسة</p>
 
-    <div class="initiative-card" style="font-size:16px;">
-        <h3>♟️ استعدادات بطولة الشطرنج</h3>
-        <p><a href="https://www.facebook.com/groups/1557274441180613/permalink/4152060428368655/" target="_blank">📸 رابط الصور</a></p>
-    </div>
+    <div id="events-list">
 
-    <div class="initiative-card" style="font-size:16px;">
-        <h3>🏅 تكريم الطلاب المتفوقين بالطلابور الصباحي بالمدرسة</h3>
-        <p><a href="https://www.facebook.com/groups/1557274441180613/permalink/4166058780302153/" target="_blank">📸 رابط الصور</a></p>
-    </div>
+        <div class="initiative-card">
+            <h3>🥇 تكريم الطلاب المتفوقين على منصة كوريو</h3>
+            <button class="menu-btn" onclick="showEventDetails('curio')">عرض التفاصيل</button>
+        </div>
 
-    <div class="initiative-card" style="font-size:16px;">
-        <h3>📚 تكريم المتفوقين في امتحانات الشهر لمادة اللغة العربية</h3>
-        <p><a href="https://www.facebook.com/groups/1557274441180613/permalink/4137345139840184/" target="_blank">📸 رابط الصور</a></p>
-    </div>
+        <div class="initiative-card">
+            <h3>♟️ استعدادات بطولة الشطرنج</h3>
+            <button class="menu-btn" onclick="showEventDetails('chess')">عرض التفاصيل</button>
+        </div>
 
-    <div class="initiative-card" style="font-size:16px;">
-        <h3>🎤 الإذاعة المدرسية الموحدة للاحتفال بافتتاح المتحف المصري</h3>
-        <p><a href="https://www.facebook.com/groups/1557274441180613/permalink/4175388676035830/" target="_blank">📸 رابط الصور</a></p>
-    </div>
+        <div class="initiative-card">
+            <h3>🏅 تكريم الطلاب المتفوقين بالطلابور الصباحي</h3>
+            <button class="menu-btn" onclick="showEventDetails('morning-honor')">عرض التفاصيل</button>
+        </div>
 
-    <div class="initiative-card" style="font-size:16px;">
-        <h3>🤼‍♂️ تكريم الطالب زياد قرني لحصوله على المركز الثالث الجمهوري في رياضة المصارعة الرومانية</h3>
-        <p><a href="https://www.facebook.com/groups/1557274441180613/permalink/4170178493223515/" target="_blank">📸 رابط الصور</a></p>
-    </div>
+        <div class="initiative-card">
+            <h3>📚 تكريم المتفوقين في امتحان اللغة العربية</h3>
+            <button class="menu-btn" onclick="showEventDetails('arabic-honor')">عرض التفاصيل</button>
+        </div>
 
-    <div class="initiative-card" style="font-size:16px;">
-        <h3>🏆 إعلان عن مسابقة المبتكر الصغير</h3>
-        <p><a href="https://www.facebook.com/groups/1557274441180613/permalink/4186435201597844/" target="_blank">📸 رابط الصور</a></p>
-    </div>
+        <div class="initiative-card">
+            <h3>🎤 الإذاعة المدرسية الموحدة لافتتاح المتحف المصري</h3>
+            <button class="menu-btn" onclick="showEventDetails('museum-radio')">عرض التفاصيل</button>
+        </div>
 
-    <div class="initiative-card" style="font-size:16px;">
-        <h3>🎬 تكريم طلاب الإذاعة على صفحة فيسبوك المدرسة لحصولهم على المركز الأول على قطاع المدارس بمحافظة أسيوط</h3>
-        <p><a href="https://www.facebook.com/groups/1557274441180613/permalink/4179506172290747/" target="_blank">📸 رابط الصور</a></p>
-    </div>
+        <div class="initiative-card">
+            <h3>🤼‍♂️ تكريم الطالب زياد قرني — المركز الثالث جمهوري مصارعة رومانية</h3>
+            <button class="menu-btn" onclick="showEventDetails('ziad')">عرض التفاصيل</button>
+        </div>
 
-    <div class="initiative-card" style="font-size:16px;">
-        <h3>💡 تأثير المبادرة على التفكير المدرسي - مقال "عالم التكنولوجيا والتحول الرقمي"</h3>
-        <p><a href="https://www.facebook.com/groups/1557274441180613/permalink/4195333057374725/" target="_blank">📸 رابط المقال</a></p>
-    </div>
+        <div class="initiative-card">
+            <h3>🏆 إعلان مسابقة المبتكر الصغير</h3>
+            <button class="menu-btn" onclick="showEventDetails('innovator')">عرض التفاصيل</button>
+        </div>
 
-    <div class="initiative-card" style="font-size:16px;">
-        <h3>📈 عن المبادرة وإنجازاتها</h3>
-        <p><a href="https://www.facebook.com/groups/1557274441180613/permalink/4202316806676350/" target="_blank">📸 رابط الصور</a></p>
-    </div>
+        <div class="initiative-card">
+            <h3>🎬 تكريم طلاب الإذاعة لفوزهم بالمركز الأول على أسيوط</h3>
+            <button class="menu-btn" onclick="showEventDetails('radio-honor')">عرض التفاصيل</button>
+        </div>
 
-    <div class="initiative-card" style="font-size:16px;">
-        <h3>⚠️ اللقاءات المدرسية بعنوان "أضرار السوشيل ميديا"</h3>
-        <p><a href="https://www.facebook.com/groups/1557274441180613/permalink/4204184859822878/" target="_blank">📸 رابط الصور</a></p>
+        <div class="initiative-card">
+            <h3>💡 مقال: تأثير المبادرة — عالم التكنولوجيا والتحول الرقمي</h3>
+            <button class="menu-btn" onclick="showEventDetails('digital-article')">عرض التفاصيل</button>
+        </div>
+
+        <div class="initiative-card">
+            <h3>📈 عن المبادرة وإنجازاتها</h3>
+            <button class="menu-btn" onclick="showEventDetails('initiative')">عرض التفاصيل</button>
+        </div>
+
+        <div class="initiative-card">
+            <h3>⚠️ اللقاء المدرسي: أضرار السوشيال ميديا</h3>
+            <button class="menu-btn" onclick="showEventDetails('social-media')">عرض التفاصيل</button>
+        </div>
+
     </div>
 
     <button class="menu-btn" onclick="backHome()">العودة للخدمات</button>
-             </div>
+</div>
+
+
+<!-- شاشة عرض تفاصيل الحدث -->
+<div id="event-details-screen" class="container hidden">
+    <h2>تفاصيل الحدث</h2>
+    <div id="event-details-content" class="initiative-card">
+        <!-- يتم ملؤه من الجافاسكريبت -->
+    </div>
+    <button class="menu-btn" onclick="showEvents()">رجوع إلى الأحداث</button>
+  </div>
     </div>
   </div>
 <!-- صفحات الضيف الفرعية -->
