@@ -324,7 +324,12 @@ function openPage(name) {
       window.location.href = "https://whatsapp.com/channel/0029VbBX4wo1SWstPmiejS0F";
       break;
     default:
+      case "events":
+    hideAll();
+    document.getElementById("events-screen").classList.remove("hidden");
+    break;
       alert("الرابط غير موجود");
+      
   }
 }
 
