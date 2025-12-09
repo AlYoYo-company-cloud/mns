@@ -31,7 +31,8 @@
     <div class="menu-btn" onclick="openPage('اعلانات')">الإعلانات المدرسية</div>
     <div class="menu-btn" onclick="openPage('حالة')">حالة الحساب</div>
     <button class="menu-btn" onclick="openTelegram()">شارك برأيك</button>
-    <!-- زر لوحة المشرف: مخفي افتراضياً، سيظهر فقط للمشرف بواسطة JS -->
+    <div class="menu-btn" onclick="openPage('events')">المناسبات والإنجازات</div>
+  <!-- زر لوحة المشرف: مخفي افتراضياً، سيظهر فقط للمشرف بواسطة JS -->
     <div class="menu-btn admin-btn hidden" id="admin-home-btn" onclick="hideAll(); document.getElementById('admin-screen').classList.remove('hidden');">لوحة المشرف</div>
 
     <button class="logout-btn" onclick="logout()">تسجيل خروج</button>
@@ -170,7 +171,29 @@
     <button class="menu-btn" onclick="openGuestPage('difference')">الفرق بين البكوريا والثانوية العامة</button>
     <button class="logout-btn" onclick="logout()">خروج</button>
 </div>
+<!-- شاشة المناسبات والإنجازات -->
+<div id="events-screen" class="container hidden">
+    <h2>المناسبات والإنجازات</h2>
 
+    <p style="text-align:center; margin-bottom:10px;">ألبوم صور فعاليات المدرسة</p>
+
+    <div class="gallery">
+        <a href="https://www.facebook.com/groups/1557274441180613/permalink/4166058780302153/" target="_blank">📸 حدث 1</a>
+        <a href="https://www.facebook.com/groups/1557274441180613/permalink/4152060428368655/" target="_blank">📸 حدث 2</a>
+        <a href="https://www.facebook.com/groups/1557274441180613/permalink/4137345139840184/" target="_blank">📸 حدث 3</a>
+        <a href="https://www.facebook.com/groups/1557274441180613/permalink/4166045460303485/" target="_blank">📸 حدث 4</a>
+        <a href="https://www.facebook.com/groups/1557274441180613/permalink/4175388676035830/" target="_blank">📸 حدث 5</a>
+        <a href="https://www.facebook.com/groups/1557274441180613/permalink/4170178493223515/" target="_blank">📸 حدث 6</a>
+        <a href="https://www.facebook.com/groups/1557274441180613/permalink/4137345139840184/" target="_blank">📸 حدث 7</a>
+        <a href="https://www.facebook.com/groups/1557274441180613/permalink/4186435201597844/" target="_blank">📸 حدث 8</a>
+        <a href="https://www.facebook.com/groups/1557274441180613/permalink/4179506172290747/" target="_blank">📸 حدث 9</a>
+        <a href="https://www.facebook.com/groups/1557274441180613/permalink/4195333057374725/" target="_blank">📸 حدث 10</a>
+        <a href="https://www.facebook.com/groups/1557274441180613/permalink/4202316806676350/" target="_blank">📸 حدث 11</a>
+        <a href="https://www.facebook.com/groups/1557274441180613/permalink/4204184859822878/" target="_blank">📸 حدث 12</a>
+    </div>
+
+    <button class="menu-btn" onclick="backHome()">العودة للخدمات</button>
+          </div>
 <!-- صفحات الضيف الفرعية -->
 <div id="about-page" class="container hidden">
     <h2>مائة وسبعة أعوام من العطاء</h2>
