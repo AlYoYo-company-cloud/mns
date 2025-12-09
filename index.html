@@ -98,27 +98,33 @@
 </div>
 
 <!-- شاشة المسابقات (داخل الموقع) -->
+<!-- شاشة المسابقات والنتائج -->
 <div id="competitions-screen" class="container hidden">
   <h2>المسابقات والنتائج</h2>
 
-  <div class="initiative-card">
-    <h3>مسابقة الطالب المثالي</h3>
-    <p>المستوى: مستوى المدرسة</p>
-    <p><strong>النتيجة:</strong> انتهت بفوز الطالب <strong>محمود أبو العزايم</strong></p>
-  </div>
+  <button class="initiative-card" onclick="showCompetitionDetails('ideal')">
+    مسابقة الطالب المثالي
+  </button>
 
-  <div class="initiative-card">
-    <h3>مسابقة أجمل فصل</h3>
-    <p></p>
-  </div>
+  <button class="initiative-card" onclick="showCompetitionDetails('best-class')">
+    مسابقة أجمل فصل
+  </button>
 
-  <div class="initiative-card">
-    <h3>مسابقة المبتكر الصغير</h3>
-    <p>المستوى: مستوى المدرسة</p>
-    <p><strong>النتيجة:</strong> فاز بها الطالب <strong>يحيى محمد</strong></p>
-  </div>
+  <button class="initiative-card" onclick="showCompetitionDetails('young-innovator')">
+    مسابقة المبتكر الصغير
+  </button>
+
+  <button class="initiative-card" onclick="showCompetitionDetails('internet-research')">
+    مسابقة بحثية عن أخطار الانترنت
+  </button>
 
   <button class="menu-btn" onclick="backHome()">العودة للخدمات</button>
+</div>
+
+<!-- شاشة تفاصيل كل مسابقة -->
+<div id="competition-details-screen" class="container hidden">
+  <div id="competition-details-content"></div>
+  <button class="menu-btn" onclick="showCompetitions()">العودة للمسابقات</button>
 </div>
 
 <!-- شاشة المشرفين (لوحة المشرف) — تمت إزالة كلمة "نظرية" -->
