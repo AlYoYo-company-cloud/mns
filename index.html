@@ -99,28 +99,71 @@
 
 <!-- شاشة المسابقات (داخل الموقع) -->
 <!-- شاشة المسابقات والنتائج -->
+<!-- شاشة المسابقات والنتائج -->
 <div id="competitions-screen" class="container hidden">
   <h2>المسابقات والنتائج</h2>
 
-  <button class="initiative-card" onclick="showCompetitionDetails('ideal')">
-    مسابقة الطالب المثالي
-  </button>
+  <div id="competitions-list">
 
-  <button class="initiative-card" onclick="showCompetitionDetails('best-class')">
-    مسابقة أجمل فصل
-  </button>
+    <div class="initiative-card">
+      <h3>مسابقة الطالب المثالي</h3>
+      <button class="menu-btn" onclick="showCompetitionDetails('ideal')">عرض التفاصيل</button>
+    </div>
 
-  <button class="initiative-card" onclick="showCompetitionDetails('young-innovator')">
-    مسابقة المبتكر الصغير
-  </button>
+    <div class="initiative-card">
+      <h3>مسابقة أجمل فصل</h3>
+      <button class="menu-btn" onclick="showCompetitionDetails('best-class')">عرض التفاصيل</button>
+    </div>
 
-  <button class="initiative-card" onclick="showCompetitionDetails('internet-research')">
-    مسابقة بحثية عن أخطار الانترنت
-  </button>
+    <div class="initiative-card">
+      <h3>مسابقة المبتكر الصغير</h3>
+      <button class="menu-btn" onclick="showCompetitionDetails('young-innovator')">عرض التفاصيل</button>
+    </div>
+
+    <div class="initiative-card">
+      <h3>مسابقة بحثية عن أخطار الإنترنت</h3>
+      <button class="menu-btn" onclick="showCompetitionDetails('internet-research')">عرض التفاصيل</button>
+    </div>
+
+    <div class="initiative-card">
+      <h3>المسابقة الدينية الكبرى — الطلاب</h3>
+      <button class="menu-btn" onclick="showCompetitionDetails('big-religion-students')">عرض التفاصيل</button>
+    </div>
+
+    <div class="initiative-card">
+      <h3>المسابقة الدينية الكبرى — المعلمين</h3>
+      <button class="menu-btn" onclick="showCompetitionDetails('big-religion-teachers')">عرض التفاصيل</button>
+    </div>
+
+    <div class="initiative-card">
+      <h3>المسابقة الدينية الكبرى — أولياء الأمور</h3>
+      <button class="menu-btn" onclick="showCompetitionDetails('big-religion-parents')">عرض التفاصيل</button>
+    </div>
+
+    <div class="initiative-card">
+      <h3>مسابقة كتابة القصة القصيرة</h3>
+      <button class="menu-btn" onclick="showCompetitionDetails('short-story')">عرض التفاصيل</button>
+    </div>
+
+    <div class="initiative-card">
+      <h3>مسابقة الموسيقى</h3>
+      <button class="menu-btn" onclick="showCompetitionDetails('music-competition')">عرض التفاصيل</button>
+    </div>
+
+  </div>
 
   <button class="menu-btn" onclick="backHome()">العودة للخدمات</button>
 </div>
 
+
+<!-- شاشة عرض تفاصيل المسابقة -->
+<div id="competition-details-screen" class="container hidden">
+  <h2>تفاصيل المسابقة</h2>
+  <div id="competition-details-content" class="initiative-card">
+    <!-- يتم ملؤه من الجافاسكريبت -->
+  </div>
+  <button class="menu-btn" onclick="showCompetitions()">رجوع إلى المسابقات</button>
+</div>
 <!-- شاشة تفاصيل كل مسابقة -->
 <div id="competition-details-screen" class="container hidden">
   <div id="competition-details-content"></div>
